@@ -1,0 +1,293 @@
+{
+	"info": {
+		"_postman_id": "484a5209-fad7-4517-b406-69796c7b2b8b",
+		"name": "Test API Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30265228"
+	},
+	"item": [
+		{
+			"name": "POST Conso",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/consommation?ANNEE=2014&CONSOR=42&CONSOT=42&CONSOI=42&CONSOA=42&CONSONA=42&DEPARTEMENT=Loire",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consommation"
+					],
+					"query": [
+						{
+							"key": "ANNEE",
+							"value": "2014"
+						},
+						{
+							"key": "CONSOR",
+							"value": "42"
+						},
+						{
+							"key": "CONSOT",
+							"value": "42"
+						},
+						{
+							"key": "CONSOI",
+							"value": "42"
+						},
+						{
+							"key": "CONSOA",
+							"value": "42"
+						},
+						{
+							"key": "CONSONA",
+							"value": "42"
+						},
+						{
+							"key": "DEPARTEMENT",
+							"value": "Loire"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Conso",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/consommation",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consommation"
+					],
+					"query": [
+						{
+							"key": "ANNEE",
+							"value": "2014",
+							"disabled": true
+						},
+						{
+							"key": "CONSOR",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOT",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOI",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSONA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "DEPARTEMENT",
+							"value": "Loire",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Conso departement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/consommation/Loire",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consommation",
+						"Loire"
+					],
+					"query": [
+						{
+							"key": "ANNEE",
+							"value": "2014",
+							"disabled": true
+						},
+						{
+							"key": "CONSOR",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOT",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOI",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSONA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "DEPARTEMENT",
+							"value": "Loire",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Conso departement",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/consommation/Var",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consommation",
+						"Var"
+					],
+					"query": [
+						{
+							"key": "ANNEE",
+							"value": "2014",
+							"disabled": true
+						},
+						{
+							"key": "CONSOR",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOT",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOI",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSOA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "CONSONA",
+							"value": "42",
+							"disabled": true
+						},
+						{
+							"key": "DEPARTEMENT",
+							"value": "Var",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Conso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:5001/api/consommation?ANNEE=2014&CONSOR=42&CONSOT=42&CONSOI=42&CONSOA=42&CONSONA=42&DEPARTEMENT=Var",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"consommation"
+					],
+					"query": [
+						{
+							"key": "ANNEE",
+							"value": "2014"
+						},
+						{
+							"key": "CONSOR",
+							"value": "42"
+						},
+						{
+							"key": "CONSOT",
+							"value": "42"
+						},
+						{
+							"key": "CONSOI",
+							"value": "42"
+						},
+						{
+							"key": "CONSOA",
+							"value": "42"
+						},
+						{
+							"key": "CONSONA",
+							"value": "42"
+						},
+						{
+							"key": "DEPARTEMENT",
+							"value": "Var"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -44,8 +44,8 @@ def set_consommation():
 
     return jsonify({"message":"ok"}), 200
 
-@app.route("/api/consommation/<string:departement>", methods=['PUT'])
-def put_consommation(id):
+@app.route("/api/consommation", methods=['PUT'])
+def put_consommation():
     annee = request.values.get("ANNEE")
     consor = request.values.get("CONSOR")
     consot = request.values.get("CONSOT")
