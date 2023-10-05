@@ -22,6 +22,7 @@ def index():
     liste_department = list(liste_department)
     
     df = pd.DataFrame(departements)
+
     moyenne_dep_years = df.groupby(["DEPARTEMENT", "ANNEE"]).mean().reset_index()
     moyenne_dep_years_list = moyenne_dep_years.to_dict(orient="records")
     pprint.pprint(moyenne_dep_years_list)
@@ -29,13 +30,13 @@ def index():
     return render_template("index.html", etudiants=departements ,liste_department=liste_department,moyenne_dep_years_list=moyenne_dep_years_list)
 
 
-@app.route("/etudiant/<string:id>")
+@app.route("/consommation/<string:id>")
 def get_etudiant(id):
     url = URL_API + "/" + id
     reponse = requests.get(url)
     content = json.loads(reponse.content.decode("utf-8"))
     
-    return render_template("etudiant.html", contenu=content)
+    return render_template("consommation.html", contenu=content)
 
 
 """
